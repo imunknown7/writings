@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Building My Blog",
+        "description": "My journey building a markdown-powered blog.",
+        "date": "2026-07-17T00:00:00.000Z",
+        "tags": [
+            "general",
+            "misc"
+        ],
+        "slug": "firstpost",
+        "draft": false
+    }
+]

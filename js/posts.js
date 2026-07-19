@@ -15,7 +15,15 @@ async function loadPosts() {
 
 function render(list) {
   container.innerHTML = "";
+  if (list.length === 0) {
+    container.innerHTML = `
+        <p class="no-results">
+            No posts found.
+        </p>
+    `;
 
+    return;
+  }
   list.forEach((post) => {
     const article = document.createElement("article");
 
@@ -50,13 +58,13 @@ function render(list) {
                 <div class="post-tags">
 
                     ${post.tags
-                    .map(
+                      .map(
                         (tag) =>
-                        `<a class="tag" href="tag.html?tag=${encodeURIComponent(
+                          `<a class="tag" href="tag.html?tag=${encodeURIComponent(
                             tag
-                        )}">${tag}</a>`
-                    )
-                    .join("")}
+                          )}">${tag}</a>`
+                      )
+                      .join("")}
 
                 </div>
 
@@ -69,14 +77,14 @@ function render(list) {
 }
 
 search.addEventListener("input", () => {
-  const query = search.value.toLowerCase();
+  const query = search.value.trim().toLowerCase();
 
   render(
     posts.filter(
       (post) =>
         post.title.toLowerCase().includes(query) ||
         post.description.toLowerCase().includes(query) ||
-        post.tags.join(" ").toLowerCase().includes(query)
+        post.tags.some((tag) => tag.toLowerCase().includes(query))
     )
   );
 });
@@ -92,3 +100,11 @@ function formatDate(date) {
 }
 
 loadPosts();
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "/") {
+    e.preventDefault();
+
+    search.focus();
+  }
+});

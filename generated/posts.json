@@ -1,13 +1,27 @@
 [
     {
-        "title": "Building My Blog",
-        "description": "My journey building a markdown-powered blog.",
+        "title": "Using quill.",
+        "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
         "date": "2026-07-17T00:00:00.000Z",
+        "timestamp": 1784246400000,
         "tags": [
             "general",
-            "misc"
+            "misc",
+            "guide"
         ],
         "slug": "firstpost",
+        "draft": false
+    },
+    {
+        "title": "Post Title",
+        "description": "A short description of this post.",
+        "date": "2026-07-17T00:00:00.000Z",
+        "timestamp": 1784246400000,
+        "tags": [
+            "guide",
+            "misc"
+        ],
+        "slug": "template",
         "draft": false
     }
 ]

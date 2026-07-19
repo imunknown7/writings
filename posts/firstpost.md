@@ -1,33 +1,44 @@
 ---
-title: Building My Blog
+title: Using quill.
 date: 2026-07-17
-description: My journey building a markdown-powered blog.
+description: A guide on writing posts, using frontmatter, and managing content in quill.
 tags:
   - general
   - misc
+  - guide
+draft: false
 ---
 
 # Hello!
 
-This is a paragraph.
+Quill is a markdown-powered personal blog built around a simple idea:
+**Write in Markdown. Build. Publish.**
+Posts are written as `.md` files, processed by the build system, and converted into static HTML pages.
 
-## Lists
-
-- Apple
-- Banana
-- Mango
+## Posting your blog
+make sure to use the following as frontmatter for any of your blog posts
+```yaml
+---
+title: "My New Post"
+date: "2026-07-17"
+description: "A short description of the post."
+tags:
+  - programming
+  - javascript
+---
+```
 
 ## Quote
 
-> Simplicity is the ultimate sophistication.
+> even quotes can be blogged!
 
 ## Code
-
+Codeblocks are supported too!
 `const x = 5`
 
 ```js
 function greet() {
-    console.log("Hello World");
+  console.log("Hello World");
 }
 ```
 
@@ -36,8 +47,11 @@ function greet() {
 ![](../../../assets/images/pfp.png)
 
 ## Table
+You can make tables as well!
+| Name | Language   |
+| ---- | ---------- |
+| quill | JavaScript |
+| Blog | Markdown   |
 
-| Name | Language |
-|------|----------|
-| Dyno | JavaScript |
-| Blog | Markdown |
+
+View [template](../template/)

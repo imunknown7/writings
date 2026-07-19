@@ -1,18 +1,55 @@
-{
-    "general": [
-        {
-            "title": "Building My Blog",
-            "slug": "firstpost",
-            "description": "My journey building a markdown-powered blog.",
-            "date": "2026-07-17T00:00:00.000Z"
-        }
-    ],
-    "misc": [
-        {
-            "title": "Building My Blog",
-            "slug": "firstpost",
-            "description": "My journey building a markdown-powered blog.",
-            "date": "2026-07-17T00:00:00.000Z"
-        }
-    ]
-}
+[
+    {
+        "name": "general",
+        "count": 1,
+        "posts": [
+            {
+                "title": "Using quill.",
+                "slug": "firstpost",
+                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
+                "date": "2026-07-17T00:00:00.000Z",
+                "timestamp": 1784246400000
+            }
+        ]
+    },
+    {
+        "name": "guide",
+        "count": 2,
+        "posts": [
+            {
+                "title": "Using quill.",
+                "slug": "firstpost",
+                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
+                "date": "2026-07-17T00:00:00.000Z",
+                "timestamp": 1784246400000
+            },
+            {
+                "title": "Post Title",
+                "slug": "template",
+                "description": "A short description of this post.",
+                "date": "2026-07-17T00:00:00.000Z",
+                "timestamp": 1784246400000
+            }
+        ]
+    },
+    {
+        "name": "misc",
+        "count": 2,
+        "posts": [
+            {
+                "title": "Using quill.",
+                "slug": "firstpost",
+                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
+                "date": "2026-07-17T00:00:00.000Z",
+                "timestamp": 1784246400000
+            },
+            {
+                "title": "Post Title",
+                "slug": "template",
+                "description": "A short description of this post.",
+                "date": "2026-07-17T00:00:00.000Z",
+                "timestamp": 1784246400000
+            }
+        ]
+    }
+]

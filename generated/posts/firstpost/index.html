@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<meta charset="UTF-8">
+    <title>Using quill.</title>
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../../../css/style.css" />
+  </head>
 
-<title>Building My Blog</title>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <a href="../../../index.html" class="lsogo"> quill </a>
 
-<link rel="stylesheet" href="../../../css/style.css">
+        <nav>
+          <a href="../../../posts.html">Posts</a>
 
-</head>
+          <a href="../../../about.html">About</a>
 
-<body>
+          <a href="https://github.com/imunknown7/quill" target="_blank"> GitHub </a>
+        </nav>
+      </header>
 
-<div class="container">
+      <article class="blog-post">
+        <a href="../../../posts.html" class="back-link"> ← Back to Posts </a>
 
-<header class="navbar">
+        <header class="post-header">
+          <h1>Using quill.</h1>
 
-<a href="../../../index.html" class="logo">
-dyno
-</a>
-
-<nav>
-
-<a href="../../posts.html">Writing</a>
-
-<a href="../../projects.html">Projects</a>
-
-<a href="../../about.html">About</a>
-
-</nav>
-
-</header>
-
-<article class="blog-post">
-
-    <a href="../../../posts.html" class="back-link">
-        ← Back to Writing
-    </a>
-
-    <header class="post-header">
-
-        <h1>Building My Blog</h1>
-
-        <div class="post-meta">
-
+          <div class="post-meta">
             <span>Fri Jul 17 2026 05:30:00 GMT+0530 (India Standard Time)</span>
+          </div>
+        </header>
 
-        </div>
-
-    </header>
-
-    <div class="post-content">
-
-        <h1>Hello!</h1>
-<p>This is a paragraph.</p>
-<h2>Lists</h2>
-<ul>
-<li>Apple</li>
-<li>Banana</li>
-<li>Mango</li>
-</ul>
+        <div class="post-content"><h1>Hello!</h1>
+<p>Quill is a markdown-powered personal blog built around a simple idea:
+<strong>Write in Markdown. Build. Publish.</strong>
+Posts are written as <code>.md</code> files, processed by the build system, and converted into static HTML pages.</p>
+<h2>Posting your blog</h2>
+<p>make sure to use the following as frontmatter for any of your blog posts</p>
+<pre class="shiki shiki-themes github-dark github-dark" style="background-color:#24292e;--shiki-dark-bg:#24292e;color:#e1e4e8;--shiki-dark:#e1e4e8" tabindex="0"><code class="language-yaml"><span class="line"><span style="color:#B392F0;--shiki-dark:#B392F0">---</span></span>
+<span class="line"><span style="color:#85E89D;--shiki-dark:#85E89D">title</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">: </span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">"My New Post"</span></span>
+<span class="line"><span style="color:#85E89D;--shiki-dark:#85E89D">date</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">: </span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">"2026-07-17"</span></span>
+<span class="line"><span style="color:#85E89D;--shiki-dark:#85E89D">description</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">: </span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">"A short description of the post."</span></span>
+<span class="line"><span style="color:#85E89D;--shiki-dark:#85E89D">tags</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">  - </span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">programming</span></span>
+<span class="line"><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">  - </span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">javascript</span></span>
+<span class="line"><span style="color:#B392F0;--shiki-dark:#B392F0">---</span></span></code></pre>
 <h2>Quote</h2>
 <blockquote>
-<p>Simplicity is the ultimate sophistication.</p>
+<p>even quotes can be blogged!</p>
 </blockquote>
 <h2>Code</h2>
-<p><code>const x = 5</code></p>
-<pre><code class="language-js">function greet() {
-    console.log(&quot;Hello World&quot;);
-}
-</code></pre>
+<p>Codeblocks are supported too!
+<code>const x = 5</code></p>
+<pre class="shiki shiki-themes github-dark github-dark" style="background-color:#24292e;--shiki-dark-bg:#24292e;color:#e1e4e8;--shiki-dark:#e1e4e8" tabindex="0"><code class="language-js"><span class="line"><span style="color:#F97583;--shiki-dark:#F97583">function</span><span style="color:#B392F0;--shiki-dark:#B392F0"> greet</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">  console.</span><span style="color:#B392F0;--shiki-dark:#B392F0">log</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">(</span><span style="color:#9ECBFF;--shiki-dark:#9ECBFF">"Hello World"</span><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8;--shiki-dark:#E1E4E8">}</span></span></code></pre>
 <h2>Image</h2>
 <p><img src="../../../assets/images/pfp.png" alt=""></p>
 <h2>Table</h2>
+<p>You can make tables as well!</p>
 <table>
 <thead>
 <tr>
@@ -85,7 +72,7 @@ dyno
 </thead>
 <tbody>
 <tr>
-<td>Dyno</td>
+<td>quill</td>
 <td>JavaScript</td>
 </tr>
 <tr>
@@ -94,19 +81,20 @@ dyno
 </tr>
 </tbody>
 </table>
-
-
-    </div>
-
-</article>
-<footer>
-
-©2026 dyno
-
-</footer>
-
+<p>View <a href="../template/">template</a></p>
 </div>
+      </article>
+      <footer>
+        <div>© 2026 dynamo</div>
 
-</body>
+        <div class="footer-links">
+          <a href="https://github.com/imunknown7/quill"> GitHub </a>
 
+          <a href="https://linkedin.com/in/yourusername"> LinkedIn </a>
+
+          <a href="mailto:you@example.com"> Email </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -194,7 +194,7 @@ section {
   justify-content: space-between;
   gap: 2rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--borders);
 }
 
 .post:last-child {

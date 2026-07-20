@@ -5,7 +5,7 @@ async function loadPosts() {
     const response = await fetch("generated/posts.json");
     const posts = await response.json();
 
-    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    posts.sort((a, b) => new Date(b.created) - new Date(a.created));
 
     posts.slice(0, 5).forEach(post => {
 
@@ -14,7 +14,7 @@ async function loadPosts() {
 
         article.innerHTML = `
             <time class="post-date">
-                ${formatDate(post.date)}
+                ${formatDate(post.created)}
             </time>
 
             <div class="post-info">

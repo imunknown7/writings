@@ -1,54 +1,14 @@
 [
     {
-        "name": "general",
+        "name": "untitled",
         "count": 1,
         "posts": [
             {
-                "title": "Using quill.",
-                "slug": "firstpost",
-                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
-                "date": "2026-07-17T00:00:00.000Z",
-                "timestamp": 1784246400000
-            }
-        ]
-    },
-    {
-        "name": "guide",
-        "count": 2,
-        "posts": [
-            {
-                "title": "Using quill.",
-                "slug": "firstpost",
-                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
-                "date": "2026-07-17T00:00:00.000Z",
-                "timestamp": 1784246400000
-            },
-            {
-                "title": "Post Title",
-                "slug": "template",
-                "description": "A short description of this post.",
-                "date": "2026-07-17T00:00:00.000Z",
-                "timestamp": 1784246400000
-            }
-        ]
-    },
-    {
-        "name": "misc",
-        "count": 2,
-        "posts": [
-            {
-                "title": "Using quill.",
-                "slug": "firstpost",
-                "description": "A guide on writing posts, using frontmatter, and managing content in quill.",
-                "date": "2026-07-17T00:00:00.000Z",
-                "timestamp": 1784246400000
-            },
-            {
-                "title": "Post Title",
-                "slug": "template",
-                "description": "A short description of this post.",
-                "date": "2026-07-17T00:00:00.000Z",
-                "timestamp": 1784246400000
+                "title": "untitled 001",
+                "slug": "untitled 001",
+                "description": "description",
+                "created": "2026-07-20T17:04",
+                "timestamp": 1784547240000
             }
         ]
     }

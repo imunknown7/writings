@@ -57,9 +57,22 @@ async function build() {
     if (data.draft === true) continue;
 
     const html = md.render(content);
+
+    const formattedCreated = new Date(data.started).toLocaleDateString(
+      "en-GB",
+      {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      }
+    );
+
     const finalHTML = template
       .replace(/{{title}}/g, data.title)
-      .replace(/{{date}}/g, data.date)
+      .replace(/{{date}}/g, formattedCreated)
       .replace(/{{content}}/g, html);
 
     const postFolder = path.join(POSTS_OUTPUT, slug);
@@ -70,15 +83,15 @@ async function build() {
 
     fs.writeFileSync(path.join(postFolder, "index.html"), finalHTML);
 
-    const postDate = new Date(data.date);
+    const postDate = new Date(data.started);
 
     posts.push({
       title: data.title,
       description: data.description || "",
-      date: data.date,
+      created: data.started,
       timestamp: postDate.getTime(),
       tags: data.tags || [],
-      slug,
+      slug: slug,
       draft: data.draft || false,
     });
   }
@@ -112,7 +125,7 @@ async function build() {
         title: post.title,
         slug: post.slug,
         description: post.description,
-        date: post.date,
+        created: post.created,
         timestamp: post.timestamp,
       });
     }

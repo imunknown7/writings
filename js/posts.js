@@ -8,7 +8,7 @@ async function loadPosts() {
 
   posts = await response.json();
 
-  posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  posts.sort((a, b) => new Date(b.created) - new Date(a.created));
 
   render(posts);
 }
@@ -33,7 +33,7 @@ function render(list) {
 
             <time class="post-date">
 
-                ${formatDate(post.date)}
+              ${formatDate(post.created)}
 
             </time>
 
@@ -90,6 +90,7 @@ search.addEventListener("input", () => {
 });
 
 function formatDate(date) {
+  console.log("formatDate received:", date);
   return new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
 

@@ -34,7 +34,7 @@ async function loadTag() {
 
             <time class="post-date">
 
-                ${formatDate(post.date)}
+                ${formatDate(post.started)}
 
             </time>
 

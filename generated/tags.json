@@ -1,14 +1,14 @@
 [
     {
-        "name": "untitled",
+        "name": "philosophy",
         "count": 1,
         "posts": [
             {
-                "title": "untitled 001",
-                "slug": "untitled 001",
-                "description": "description",
-                "created": "2026-07-20T17:04",
-                "timestamp": 1784547240000
+                "title": "why the fuck am i alive?",
+                "slug": "nihilism",
+                "description": "just think of it. why are you alive? what are you living towards? what is the point of your life?",
+                "created": "2026-07-21T18:40",
+                "timestamp": 1784639400000
             }
         ]
     }

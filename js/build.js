@@ -12,6 +12,7 @@ async function build() {
     html: true,
     linkify: true,
     typographer: true,
+    breaks: true
   });
 
   md.use(

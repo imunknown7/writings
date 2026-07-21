@@ -5,7 +5,7 @@ tags:
   - philosophy
 draft: false
 started: 2026-07-21T18:40
-modified: 2026-07-21T20:00
+modified: 2026-07-21T20:21
 ---
 # think of it.
 Why are you alive?
@@ -41,3 +41,6 @@ I've always wanted to climb onto a sunshade (or whatever the fuck it's called) a
 That's the point.
 
 The life of a nihilist is basically an empty land. And once you're aware of that, you can build whatever the fuck you want on that land, without social pressure or any of that bullshit.
+
+>If we affirm one moment, we thus affirm not only ourselves but all existence. For nothing is self-sufficient, neither in us ourselves nor in things; and if our soul has trembled with happiness and sounded like a harp string just once, all eternity was needed to produce this one event - and in this single moment of affirmation all eternity was called good, redeemed, justified, and affirmed.
+>\- *Friedrich Nietzsche*

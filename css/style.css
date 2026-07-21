@@ -124,13 +124,11 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-
   .container {
     width: min(100% - 2rem, 760px);
     background: transparent;
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-
   }
 
   .hero {
@@ -155,7 +153,6 @@ a:hover {
     font-size: 1rem;
     margin-inline: auto;
   }
-
 }
 
 /* general section stylings */
@@ -186,7 +183,6 @@ section {
 #posts-list {
   display: flex;
   flex-direction: column;
-  
 }
 
 .post {
@@ -500,6 +496,8 @@ footer a:hover {
 }
 
 .post-content p {
+  margin: 0 0 1.5rem;
+  line-height: 1.8;
   color: var(--secondarytext);
 }
 
